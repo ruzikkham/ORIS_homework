@@ -17,7 +17,7 @@ import java.util.List;
 public class ConsoleSearchServlet extends HttpServlet {
 
     private static final String DB_USER = "postgres";
-    private static final String DB_PASSWORD = "admin";
+    private static final String DB_PASSWORD = "20602070";
     private static final String DB_URL = "jdbc:postgresql://localhost:5432/test_db_11_402";
 
     private Connection connection;
@@ -39,6 +39,13 @@ public class ConsoleSearchServlet extends HttpServlet {
         String operator = request.getParameter("operator");
         String value = request.getParameter("value");
         response.setContentType("text/plain;charset=UTF-8");
+
+        if (by == null && operator == null && value == null) {
+            response.getWriter().println("Пример запроса:");
+            response.getWriter().println(request.getContextPath()
+                    + "/searchConsole?by=fines_num&operator=%3E&value=3");
+            return;
+        }
 
         if (by == null || operator == null || value == null) {
             response.sendError(400, "Укажите by, operator и value");

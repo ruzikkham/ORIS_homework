@@ -21,7 +21,7 @@ import java.util.Optional;
 public class SaveUsersServlet extends HttpServlet {
 
     private static final String DB_USER = "postgres";
-    private static final String DB_PASSWORD = "admin";
+    private static final String DB_PASSWORD = "20602070";
     private static final String DB_URL = "jdbc:postgresql://localhost:5432/test_db_11_402";
     private Connection connection;
     private List<User> users;

@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,11 +22,11 @@
 <h2>Добро пожаловать!</h2>
 <p>Выберите действие:</p>
 <ul>
-    <li><a href="./saveUsers"> Добавить водителей (пошагово)</a></li>
-    <li><a href="./save"> Добавить пачкой (N из БД → redirect)</a></li>
-    <li><a href="./selectUsers"> Найти водителей (JSP)</a></li>
-    <li><a href="./searchConsole"> Поиск в консоль</a></li>
-    <li><a href="./users"> Все водители</a></li>
+    <li><a href="./saveUsers">➕ Добавить водителей (пошагово)</a></li>
+    <li><a href="./save">➕ Добавить пачкой (N из БД → redirect)</a></li>
+    <li><a href="./selectUsers">🔍 Найти водителей (JSP)</a></li>
+    <li><a href="./searchConsole">🖥 Поиск в консоль</a></li>
+    <li><a href="./users">📋 Все водители</a></li>
 </ul>
 </body>
 </html>
